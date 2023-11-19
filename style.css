@@ -1,0 +1,88 @@
+@import url('https://fonts.cdnfonts.com/css/plus-jakarta-sans');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;                                    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #1D71F2, #19C3FB);
+}
+
+.content {
+    padding: 20px;
+    width: 465px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    padding: 5px 0 5px 0;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    border-bottom: 2px solid #fff;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+button {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+    background: none;
+    margin-left: -21px;
+    font-size: 16px;
+}
+
+.weather-info {
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #2196F3;
+    text-align: center;
+    color: #fff;
+    font-family: inherit;
+    display: none;
+}
+
+.weather-info img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.weather-info_header h2 {
+    margin-bottom: 5px;
+}
+
+.weather-info_header p {
+    margin-top: 0;
+}
+
+.weather-info_info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weather-info_info-item {
+    text-align: left;
+    padding: 15px;
+}
+
+.weather-info_info-item p{
+    margin: 0;
+}
