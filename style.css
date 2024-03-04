@@ -1,10 +1,13 @@
 @import url('https://fonts.cdnfonts.com/css/plus-jakarta-sans');
 
 *,
-:after,
-:before {
-    border: 0 solid;
-    box-sizing: border-box
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +22,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    overflow: scroll;
 }
 
 h1,
@@ -61,7 +65,6 @@ textarea {
 }
 
 input {
-    flex: 1;
     padding: 5px 0 5px 0;
     border: none;
     outline: none;
@@ -133,4 +136,16 @@ button {
 
 .weather-info_header-left p {
     font-size: 30px;
+}
+
+@media (max-width:600px) {
+    .content {
+        width: 390px;
+    }
+    input {
+        width: 300px;
+    }
+    .weather-info {
+        padding: 20px;
+    }
 }
