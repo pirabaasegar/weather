@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+input {
+  padding: 5px 100px 5px 0;
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input::placeholder {
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  margin-left: -21px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.weather-info {
+  padding: 35px;
+  border-radius: 20px;
+  background: #00000050;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-info_header {
+  margin-bottom: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-info_header-right img {
+  margin: -12px 0;
+}
+
+.weather-info_header-left p {
+  font-size: 30px;
 }
